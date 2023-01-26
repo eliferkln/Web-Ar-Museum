@@ -54,7 +54,7 @@ export const Footer = () => (
   <Container as="footer" role="contentinfo" py={{ base: "12", md: "16" }}>
     <Flex justify={"center"}>
       <Text fontSize="sm" color="subtle">
-        <Link href="https://myportfolio-hanifeerkalan.vercel.app/">
+        <Link href="https://reactfiberportfoliowebsite.vercel.app/">
           <a>Designed & Developed by Hanife Erkalan</a>
         </Link>{" "}
         &copy; {new Date().getFullYear()}{" "}
