@@ -21,7 +21,13 @@ const Attribute = (props: any) => {
   const trait_type = attribute.trait_type;
   const value = attribute.value;
   return (
-    <Stat px={{ base: 4, md: 8 }} py={"2"} shadow={"md"} rounded={"lg"}>
+    <Stat
+      px={{ base: 4, md: 8 }}
+      py={"2"}
+      shadow={"md"}
+      rounded={"lg"}
+      bg={useColorModeValue("#eaeaea", "gray.800")}
+    >
       <StatLabel
         textTransform={"uppercase"}
         fontWeight={"medium"}
@@ -48,7 +54,11 @@ const AttributeList = (props: any) => {
     <Attribute key={idx} attribute={attribute}></Attribute>
   ));
   return (
-    <SimpleGrid columns={{ base: 2 }} spacing={{ base: 5, lg: 8 }}>
+    <SimpleGrid
+      columns={{ base: 2 }}
+      spacing={{ base: 5, lg: 8 }}
+      // bg={useColorModeValue("#d5d1d1", "gray.800")}
+    >
       {displayAttributes}
     </SimpleGrid>
   );
@@ -60,7 +70,7 @@ export default function CardModel(props: any) {
       <Box
         role={"group"}
         p={6}
-        bg={useColorModeValue("white", "gray.800")}
+        bg={useColorModeValue("#d5cdda", "gray.800")}
         boxShadow={"2xl"}
         rounded={"lg"}
         pos={"relative"}

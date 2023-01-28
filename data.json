@@ -22,42 +22,42 @@
   "models": [
     {
       "name": "Gold Cube",
-      "glbFile": "/assets/gold-cube.glb",
+      "glbFile": "/assets/a.glb",
       "attributes": [
-        { "trait_type": "shape", "value": "cube" },
-        { "trait_type": "size", "value": "small" },
-        { "trait_type": "color", "value": "gold" },
-        { "trait_type": "material", "value": "metal" }
+        { "trait_type": "Object", "value": "Car" },
+        { "trait_type": "size", "value": "Medium" },
+        { "trait_type": "color", "value": "Yellow" },
+        { "trait_type": "material", "value": "Metal" }
       ]
     },
     {
       "name": "Silver Cube",
-      "glbFile": "/assets/silver-cube.glb",
+      "glbFile": "/assets/z.glb",
       "attributes": [
-        { "trait_type": "shape", "value": "cube" },
-        { "trait_type": "size", "value": "small" },
-        { "trait_type": "color", "value": "silver" },
-        { "trait_type": "material", "value": "metal" }
+        { "trait_type": "Object", "value": "Radio" },
+        { "trait_type": "size", "value": "Small" },
+        { "trait_type": "color", "value": "Brown" },
+        { "trait_type": "material", "value": "Wood" }
       ]
     },
     {
       "name": "Red Cube",
-      "glbFile": "/assets/red-cube.glb",
+      "glbFile": "/assets/y.glb",
       "attributes": [
-        { "trait_type": "shape", "value": "cube" },
-        { "trait_type": "size", "value": "small" },
-        { "trait_type": "color", "value": "red" },
-        { "trait_type": "material", "value": "plastic" }
+        { "trait_type": "Object", "value": "Mirror" },
+        { "trait_type": "size", "value": "Big" },
+        { "trait_type": "color", "value": "Brown" },
+        { "trait_type": "material", "value": "Wood" }
       ]
     },
     {
       "name": "Green Cube",
-      "glbFile": "/assets/green-cube.glb",
+      "glbFile": "/assets/x.glb",
       "attributes": [
-        { "trait_type": "shape", "value": "cube" },
-        { "trait_type": "size", "value": "small" },
-        { "trait_type": "color", "value": "green" },
-        { "trait_type": "material", "value": "plastic" }
+        { "trait_type": "Object", "value": "Plane" },
+        { "trait_type": "size", "value": "Medium" },
+        { "trait_type": "color", "value": "Blue" },
+        { "trait_type": "material", "value": "Metal" }
       ]
     }
   ]
