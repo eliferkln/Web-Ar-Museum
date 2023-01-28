@@ -3,6 +3,7 @@ import type { NextPage, GetStaticProps } from "next";
 import CardModel from "../components/card-model";
 import { loadData } from "../lib/load-data";
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
 import {
   Avatar,
   Box,
@@ -41,7 +42,7 @@ const Social = (props: any) => {
   return (
     <Box px={2}>
       <IconContext.Provider
-        value={{ color: "#999999", className: "global-class-name" }}
+        value={{ color: "#c6c6da", className: "global-class-name" }}
       >
         <Link href={social.url}>
           <a>{icon}</a>
@@ -52,16 +53,35 @@ const Social = (props: any) => {
 };
 
 export const Footer = () => (
-  <Container as="footer" role="contentinfo" py={{ base: "12", md: "16" }}>
-    <Flex justify={"center"}>
-      <Text fontSize="sm" color="subtle">
-        <Link href="https://reactfiberportfoliowebsite.vercel.app/">
-          <a>Designed & Developed by Hanife Erkalan</a>
-        </Link>{" "}
-        &copy; {new Date().getFullYear()}{" "}
-      </Text>
-    </Flex>
-  </Container>
+  <div
+    style={{
+      backgroundColor: "#dddcde",
+    }}
+  >
+    <img
+      src="images/footer-curve.svg"
+      alt="Footer"
+      className="w-full bg"
+      loading="lazy"
+      height={150}
+      role="presentation"
+      width={1517}
+      style={{ backgroundColor: "#dddcde" }}
+    />
+
+    <Container as="footer" role="contentinfo" py={{ base: "-12", md: "6" }}>
+      <Flex justify={"center"}>
+        <Text fontSize="sm" color="subtle">
+          <Link href="https://reactfiberportfoliowebsite.vercel.app/">
+            <a style={{ fontSize: "18px", color: "#1a202c" }}>
+              Designed & Developed by Hanife Erkalan
+            </a>
+          </Link>{" "}
+          &copy; {new Date().getFullYear()}{" "}
+        </Text>
+      </Flex>
+    </Container>
+  </div>
 );
 
 const Socials = (props: any) => {
@@ -79,13 +99,17 @@ const Socials = (props: any) => {
 const Home: NextPage = (props: any) => {
   return (
     <>
-      <Box className={styles.main} px={[4, 4]}>
+      <Box
+        className={styles.main}
+        px={[4, 4]}
+        bg={useColorModeValue("#111827", "gray.100")}
+      >
         <Flex justify={"center"} mt={-10}>
           <Avatar
             size={"2xl"}
             src={props.data.artist.avatar}
             css={{
-              border: "2px solid white",
+              border: "2px solid #aab0b9",
             }}
             bg={useColorModeValue("#d0d0d0", "gray.800")}
           />
@@ -93,7 +117,12 @@ const Home: NextPage = (props: any) => {
 
         <Box p={6}>
           <Stack spacing={0} align={"center"} mb={5}>
-            <Heading fontSize={"2xl"} fontWeight={500} fontFamily={"body"}>
+            <Heading
+              fontSize={"2xl"}
+              fontWeight={500}
+              fontFamily={"body"}
+              color={"#aab0b9"}
+            >
               {props.data.artist.name}
             </Heading>
             <Text color={"gray.500"}>{props.data.artist.shortBio}</Text>
@@ -102,7 +131,7 @@ const Home: NextPage = (props: any) => {
         </Box>
         <Stack>
           <Flex alignItems={"center"} justify={"center"}>
-            <Heading as="h3" textAlign={"center"} size="2xl">
+            <Heading as="h4" textAlign={"center"} size="2xl" color={"#aab0b9"}>
               {props.data.project.name}
             </Heading>
           </Flex>

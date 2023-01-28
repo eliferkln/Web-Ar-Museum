@@ -71,6 +71,7 @@ export default function CardModel(props: any) {
         role={"group"}
         p={6}
         bg={useColorModeValue("#dddcde", "gray.800")}
+        style={{ border: "3px solid #aab0b9", borderRadius: "25px" }}
         boxShadow={"2xl"}
         rounded={"lg"}
         pos={"relative"}
