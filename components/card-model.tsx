@@ -38,9 +38,9 @@ const Attribute = (props: any) => {
       </StatLabel>
       <StatNumber
         textTransform={"capitalize"}
-        mt={"-1.5"}
+        mt={"-1"}
         fontSize={"2xl"}
-        fontWeight={"medium"}
+        fontWeight={"small"}
       >
         {value}
       </StatNumber>

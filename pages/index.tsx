@@ -12,6 +12,7 @@ import {
   SimpleGrid,
   Stack,
   Text,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import * as FontAwesome from "react-icons/fa";
@@ -78,14 +79,15 @@ const Socials = (props: any) => {
 const Home: NextPage = (props: any) => {
   return (
     <>
-      <Box className={styles.main} px={[4, 10]}>
-        <Flex justify={"center"} mt={-12}>
+      <Box className={styles.main} px={[4, 4]}>
+        <Flex justify={"center"} mt={-10}>
           <Avatar
             size={"2xl"}
             src={props.data.artist.avatar}
             css={{
               border: "2px solid white",
             }}
+            bg={useColorModeValue("#d0d0d0", "gray.800")}
           />
         </Flex>
 
