@@ -70,7 +70,7 @@ export default function CardModel(props: any) {
       <Box
         role={"group"}
         p={6}
-        bg={useColorModeValue("#d5cdda", "gray.800")}
+        bg={useColorModeValue("#dddcde", "gray.800")}
         boxShadow={"2xl"}
         rounded={"lg"}
         pos={"relative"}
