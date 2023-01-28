@@ -106,7 +106,6 @@ const Home: NextPage = (props: any) => {
         bg={useColorModeValue("#111827", "gray.100")}
       >
         <a href="/contact">
-          {" "}
           <TiChevronRight
             style={{
               color: "white",

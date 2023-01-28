@@ -1,6 +1,6 @@
 import React from "react";
 import toast, { Toaster } from "react-hot-toast";
-
+import Link from "next/link";
 function index() {
   function send() {
     toast.success("Success Send !", {
