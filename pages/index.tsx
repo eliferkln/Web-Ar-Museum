@@ -25,7 +25,7 @@ const Models = (props: any) => {
     <CardModel key={idx} model={model}></CardModel>
   ));
   return (
-    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: 5, lg: 8 }}>
+    <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 6 }}>
       {displayModels}{" "}
     </SimpleGrid>
   );
