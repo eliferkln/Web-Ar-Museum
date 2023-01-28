@@ -6,6 +6,17 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -14,7 +25,6 @@ a {
 * {
   box-sizing: border-box;
 }
-
 
 model-viewer {
   display: block;
@@ -39,7 +49,6 @@ model-viewer::part(default-progress-mask) {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 @keyframes wiggle {
   10%,

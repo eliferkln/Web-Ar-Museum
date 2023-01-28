@@ -69,7 +69,7 @@ export const Footer = () => (
       style={{ backgroundColor: "#dddcde" }}
     />
 
-    <Container as="footer" role="contentinfo" py={{ base: "-12", md: "6" }}>
+    <Container as="footer" role="contentinfo" py={{ base: "10", md: "12" }}>
       <Flex justify={"center"}>
         <Text fontSize="sm" color="subtle">
           <Link href="https://reactfiberportfoliowebsite.vercel.app/">
