@@ -63,7 +63,7 @@ export const Footer = () => (
       alt="Footer"
       className="w-full bg"
       loading="lazy"
-      height={150}
+      height={100}
       role="presentation"
       width={1517}
       style={{ backgroundColor: "#dddcde" }}
