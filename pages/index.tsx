@@ -17,6 +17,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import * as FontAwesome from "react-icons/fa";
+import { TiChevronRight } from "react-icons/ti";
 import { IconContext } from "react-icons";
 
 const Models = (props: any) => {
@@ -104,6 +105,17 @@ const Home: NextPage = (props: any) => {
         px={[4, 4]}
         bg={useColorModeValue("#111827", "gray.100")}
       >
+        <a href="/contact">
+          {" "}
+          <TiChevronRight
+            style={{
+              color: "white",
+              marginLeft: "1300px",
+              fontSize: "35px",
+            }}
+          />
+        </a>
+
         <Flex justify={"center"} mt={-10}>
           <Avatar
             size={"2xl"}

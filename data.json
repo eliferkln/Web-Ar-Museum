@@ -19,6 +19,7 @@
   "project": {
     "name": "AR Gallery "
   },
+
   "models": [
     {
       "name": "Green Cube",
