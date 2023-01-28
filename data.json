@@ -49,16 +49,6 @@
         { "trait_type": "color", "value": "Brown" },
         { "trait_type": "material", "value": "Wood" }
       ]
-    },
-    {
-      "name": "Green Cube",
-      "glbFile": "/assets/x.glb",
-      "attributes": [
-        { "trait_type": "Object", "value": "Plane" },
-        { "trait_type": "size", "value": "Medium" },
-        { "trait_type": "color", "value": "Blue" },
-        { "trait_type": "material", "value": "Metal" }
-      ]
     }
   ]
 }
