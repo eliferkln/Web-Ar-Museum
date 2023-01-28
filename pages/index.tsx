@@ -105,7 +105,7 @@ const Home: NextPage = (props: any) => {
         px={[4, 4]}
         bg={useColorModeValue("#111827", "gray.100")}
       >
-        <a href="/contact">
+        <Link href="/contact">
           <TiChevronRight
             style={{
               color: "white",
@@ -113,7 +113,7 @@ const Home: NextPage = (props: any) => {
               fontSize: "35px",
             }}
           />
-        </a>
+        </Link>
 
         <Flex justify={"center"} mt={-10}>
           <Avatar
