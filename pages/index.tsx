@@ -117,7 +117,7 @@ const Home: NextPage = (props: any) => {
         </Flex>
 
         <Box p={6}>
-          <Box marginLeft={"96"}>
+          <Box marginLeft={"80"}>
             {" "}
             <Link href="/contact">
               <TiChevronRight
