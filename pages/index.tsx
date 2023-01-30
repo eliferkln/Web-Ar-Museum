@@ -105,16 +105,6 @@ const Home: NextPage = (props: any) => {
         px={[4, 4]}
         bg={useColorModeValue("#111827", "gray.100")}
       >
-        <Link href="/contact">
-          <TiChevronRight
-            style={{
-              color: "white",
-              marginLeft: "1300px",
-              fontSize: "35px",
-            }}
-          />
-        </Link>
-
         <Flex justify={"center"} mt={-10}>
           <Avatar
             size={"2xl"}
@@ -127,6 +117,19 @@ const Home: NextPage = (props: any) => {
         </Flex>
 
         <Box p={6}>
+          <Box px={"14"} marginLeft={"96"}>
+            {" "}
+            <Link href="/contact">
+              <TiChevronRight
+                className="contactpage"
+                style={{
+                  color: "#d0d0d0",
+                  //   marginLeft: "1300px",
+                  fontSize: "30px",
+                }}
+              />
+            </Link>{" "}
+          </Box>
           <Stack spacing={0} align={"center"} mb={5}>
             <Heading
               fontSize={"2xl"}

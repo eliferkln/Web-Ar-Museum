@@ -1,6 +1,8 @@
 import React from "react";
 import toast, { Toaster } from "react-hot-toast";
 
+import styles from ".././styles/Home.module.css";
+
 function index() {
   function send() {
     toast.success("Success Send !", {
@@ -9,15 +11,14 @@ function index() {
   }
   return (
     <>
-      {" "}
       <div
         style={{
-          backgroundColor: "#111827",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
-          marginTop: "140px",
+          marginTop: "60px",
+          backgroundColor: "#111827",
         }}
       >
         <h3
@@ -33,7 +34,8 @@ function index() {
           style={{
             display: "flex",
             flexDirection: "column",
-            width: "350px",
+            maxWidth: "350px",
+            width: "100%",
             margin: "10px",
           }}
         >
@@ -44,7 +46,7 @@ function index() {
               border: "3px solid #aab0b9",
               borderRadius: "10px",
               margin: "10px",
-              padding: "4px",
+              padding: "6px",
               backgroundColor: "#eaeaea",
             }}
           />
@@ -55,12 +57,12 @@ function index() {
               border: "3px solid #aab0b9",
               borderRadius: "10px",
               margin: "10px",
-              padding: "4px",
+              padding: "6px",
               backgroundColor: "#eaeaea",
             }}
           />
-          <input
-            type="text"
+          <textarea
+            rows={6}
             placeholder="Message"
             style={{
               border: "3px solid #aab0b9",
@@ -85,16 +87,21 @@ function index() {
           <Toaster />
         </div>
       </div>
-      <img
+
+      {/* <img
         src="images/footer-curve.svg"
         alt="Footer"
-        className="w-full bg"
+        className="contactpage"
         loading="lazy"
         height={100}
         role="presentation"
-        width={1550}
-        style={{ backgroundColor: "#dddcde" }}
-      />
+        style={{
+          backgroundColor: "#dddcde",
+          maxWidth: "1550px",
+          width: "100%",
+          display: "block",
+        }}
+      /> */}
     </>
   );
 }
