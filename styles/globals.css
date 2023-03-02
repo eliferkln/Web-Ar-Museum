@@ -175,8 +175,3 @@ model-viewer > .ar-prompt > img {
 .icon-modelviewer-black {
   background-image: url(/assets/ic_modelviewer.svg);
 }
-
-.@media screen and (max-width: 480px) {
-  .contactpage {
-  }
-}

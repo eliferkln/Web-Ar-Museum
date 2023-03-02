@@ -66,8 +66,7 @@ export const Footer = () => (
       loading="lazy"
       height={100}
       role="presentation"
-      width={1517}
-      style={{ backgroundColor: "#dddcde" }}
+      style={{ backgroundColor: "#dddcde", width: "100%" }}
     />
 
     <Container as="footer" role="contentinfo" py={{ base: "10", md: "12" }}>
