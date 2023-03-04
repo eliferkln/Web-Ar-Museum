@@ -1,6 +1,6 @@
 import React from "react";
 import toast, { Toaster } from "react-hot-toast";
-
+import { BiUpload } from "react-icons/bi";
 import styles from ".././styles/Home.module.css";
 
 function index() {
@@ -27,8 +27,7 @@ function index() {
             color: "#aab0b9",
           }}
         >
-          {" "}
-          Contact Me{" "}
+          Edit Profile
         </h3>
         <div
           style={{
@@ -39,9 +38,38 @@ function index() {
             margin: "10px",
           }}
         >
+          <div
+            style={{
+              border: "3px solid #aab0b9",
+              borderRadius: "10px",
+              margin: "10px",
+              padding: "6px",
+              backgroundColor: "#eaeaea",
+            }}
+          >
+            <input
+              type="file"
+              style={{
+                color: "#eaeaea",
+                margin: "10px",
+                padding: "6px",
+              }}
+            />
+            <BiUpload
+              style={{
+                color: "#aaaab2",
+                margin: "10px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "30px",
+              }}
+            />
+          </div>
+
           <input
             type="text"
-            placeholder="Name"
+            placeholder="Object Name"
             style={{
               border: "3px solid #aab0b9",
               borderRadius: "10px",
@@ -52,7 +80,7 @@ function index() {
           />
           <input
             type="text"
-            placeholder="Email"
+            placeholder="Size"
             style={{
               border: "3px solid #aab0b9",
               borderRadius: "10px",
@@ -61,17 +89,29 @@ function index() {
               backgroundColor: "#eaeaea",
             }}
           />
-          <textarea
-            rows={6}
-            placeholder="Message"
+          <input
+            type="text"
+            placeholder="Color"
             style={{
               border: "3px solid #aab0b9",
               borderRadius: "10px",
               margin: "10px",
+              padding: "6px",
               backgroundColor: "#eaeaea",
-              padding: "8px",
             }}
           />
+          <input
+            type="text"
+            placeholder="Material"
+            style={{
+              border: "3px solid #aab0b9",
+              borderRadius: "10px",
+              margin: "10px",
+              padding: "6px",
+              backgroundColor: "#eaeaea",
+            }}
+          />
+
           <div
             style={{
               color: "#aab0b9",
@@ -95,24 +135,10 @@ function index() {
               <a href="/">Send</a>
             </button>
           </div>
+
           <Toaster />
         </div>
       </div>
-
-      {/* <img
-        src="images/footer-curve.svg"
-        alt="Footer"
-        className="contactpage"
-        loading="lazy"
-        height={100}
-        role="presentation"
-        style={{
-          backgroundColor: "#dddcde",
-          maxWidth: "1550px",
-          width: "100%",
-          display: "block",
-        }}
-      /> */}
     </>
   );
 }

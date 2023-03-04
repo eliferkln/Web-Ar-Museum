@@ -85,7 +85,7 @@ export default function CardModel(props: any) {
             usdzFile={props.model.usdzFile}
           />
         </Box>
-        <Stack pt={10} align={"center"}>
+        <Stack pt={8} align={"center"}>
           <AttributeList attributes={props.model.attributes} />
         </Stack>
       </Box>

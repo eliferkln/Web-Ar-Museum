@@ -18,6 +18,7 @@ import {
 import Link from "next/link";
 import * as FontAwesome from "react-icons/fa";
 import { TiChevronRight } from "react-icons/ti";
+import { FiEdit } from "react-icons/fi";
 import { IconContext } from "react-icons";
 
 const Models = (props: any) => {
@@ -74,7 +75,7 @@ export const Footer = () => (
         <Text fontSize="sm" color="subtle">
           <Link href="https://reactfiberportfoliowebsite.vercel.app/">
             <a style={{ fontSize: "18px", color: "#1a202c" }}>
-              Designed & Developed by Hanife Erkalan
+              Designed & Developed by <b>Hanife Erkalan</b>
             </a>
           </Link>{" "}
           &copy; {new Date().getFullYear()}{" "}
@@ -104,7 +105,7 @@ const Home: NextPage = (props: any) => {
         px={[4, 4]}
         bg={useColorModeValue("#111827", "gray.100")}
       >
-        <Flex justify={"center"} mt={-10}>
+        <Flex justify={"center"} mt={0}>
           <Avatar
             size={"2xl"}
             src={props.data.artist.avatar}
@@ -115,9 +116,8 @@ const Home: NextPage = (props: any) => {
           />
         </Flex>
 
-        <Box p={6}>
+        <Box p={4}>
           <Box marginLeft={"80"}>
-            {" "}
             <Link href="/contact">
               <TiChevronRight
                 className="contactpage"
@@ -127,9 +127,10 @@ const Home: NextPage = (props: any) => {
                   fontSize: "30px",
                 }}
               />
-            </Link>{" "}
+            </Link>
           </Box>
-          <Stack spacing={0} align={"center"} mb={5}>
+
+          <Stack spacing={0} align={"center"}>
             <Heading
               fontSize={"2xl"}
               fontWeight={500}
@@ -142,9 +143,23 @@ const Home: NextPage = (props: any) => {
             <Socials data={props.data} />
           </Stack>
         </Box>
+        <Box marginLeft={"0"} mb={4}>
+          {" "}
+          <Link href="/editProfile">
+            <FiEdit
+              className="profileEdit"
+              color={"#aab0b9"}
+              style={{
+                //   marginLeft: "1300px",
+                fontSize: "24px",
+                margin: "2px",
+              }}
+            />
+          </Link>{" "}
+        </Box>
         <Stack>
           <Flex alignItems={"center"} justify={"center"}>
-            <Heading as="h4" textAlign={"center"} size="2xl" color={"#aab0b9"}>
+            <Heading as="h5" textAlign={"center"} size="2xl" color={"#aab0b9"}>
               {props.data.project.name}
             </Heading>
           </Flex>
