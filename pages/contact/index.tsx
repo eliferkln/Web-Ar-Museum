@@ -1,5 +1,6 @@
 import React from "react";
 import toast, { Toaster } from "react-hot-toast";
+import Link from "next/link";
 
 import styles from ".././styles/Home.module.css";
 
@@ -92,7 +93,10 @@ function index() {
               }}
               onClick={send}
             >
-              <a href="/">Send</a>
+              <Link href="/">
+                {" "}
+                <a>Send</a>
+              </Link>
             </button>
           </div>
           <Toaster />

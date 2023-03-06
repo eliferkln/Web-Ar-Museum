@@ -2,6 +2,7 @@ import React from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { BiUpload } from "react-icons/bi";
 import styles from ".././styles/Home.module.css";
+import Link from "next/link";
 
 function index() {
   function send() {
@@ -153,7 +154,9 @@ function index() {
               }}
               onClick={send}
             >
-              <a href="/editModel">Send</a>
+              <Link href="/editModel">
+                <a>Send</a>
+              </Link>
             </button>
           </div>
 
