@@ -60,7 +60,7 @@ export const Footer = () => (
       backgroundColor: "#dddcde",
     }}
   >
-    <img
+    <Image
       src="images/footer-curve.svg"
       alt="Footer"
       className="w-full bg"
@@ -119,14 +119,17 @@ const Home: NextPage = (props: any) => {
         <Box p={4}>
           <Box marginLeft={"80"}>
             <Link href="/contact">
-              <TiChevronRight
-                className="contactpage"
-                style={{
-                  color: "#d0d0d0",
-                  //   marginLeft: "1300px",
-                  fontSize: "30px",
-                }}
-              />
+              <>
+                {" "}
+                <TiChevronRight
+                  className="contactpage"
+                  style={{
+                    color: "#d0d0d0",
+                    //   marginLeft: "1300px",
+                    fontSize: "30px",
+                  }}
+                />
+              </>
             </Link>
           </Box>
 
@@ -146,15 +149,18 @@ const Home: NextPage = (props: any) => {
         <Box marginLeft={"0"} mb={4}>
           {" "}
           <Link href="/editProfile">
-            <FiEdit
-              className="profileEdit"
-              color={"#aab0b9"}
-              style={{
-                //   marginLeft: "1300px",
-                fontSize: "24px",
-                margin: "2px",
-              }}
-            />
+            <>
+              {" "}
+              <FiEdit
+                className="profileEdit"
+                color={"#aab0b9"}
+                style={{
+                  //   marginLeft: "1300px",
+                  fontSize: "24px",
+                  margin: "2px",
+                }}
+              />{" "}
+            </>
           </Link>{" "}
         </Box>
         <Stack>
