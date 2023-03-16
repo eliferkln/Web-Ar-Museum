@@ -1,10 +1,7 @@
 import React from "react";
 import toast, { Toaster } from "react-hot-toast";
-import Link from "next/link";
 
-import styles from ".././styles/Home.module.css";
-
-function index() {
+function Index() {
   function send() {
     toast.success("Success Send !", {
       position: "top-center",
@@ -93,10 +90,8 @@ function index() {
               }}
               onClick={send}
             >
-              <Link href="/">
-                {" "}
-                <a>Send</a>
-              </Link>
+              {" "}
+              <a>Send</a>
             </button>
           </div>
           <Toaster />
@@ -121,4 +116,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

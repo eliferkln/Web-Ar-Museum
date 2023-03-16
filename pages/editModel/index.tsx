@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { BiUpload } from "react-icons/bi";
@@ -133,9 +132,7 @@ function index() {
               }}
               onClick={send}
             >
-              <Link href="/">
-                <a>Send</a>
-              </Link>
+              <a>Send</a>
             </button>
           </div>
 

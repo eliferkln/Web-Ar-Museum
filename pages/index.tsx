@@ -4,6 +4,7 @@ import CardModel from "../components/card-model";
 import { loadData } from "../lib/load-data";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import FooterImg from "../public/images/footer-curve.svg";
 import {
   Avatar,
   Box,
@@ -60,14 +61,13 @@ export const Footer = () => (
       backgroundColor: "#dddcde",
     }}
   >
-    <Image
+    <img
       src="images/footer-curve.svg"
       alt="Footer"
       className="w-full bg"
       loading="lazy"
-      height={100}
       role="presentation"
-      style={{ backgroundColor: "#dddcde", width: "100%" }}
+      style={{ backgroundColor: "#dddcde", width: "100%", height: "100%" }}
     />
 
     <Container as="footer" role="contentinfo" py={{ base: "10", md: "12" }}>
@@ -77,7 +77,7 @@ export const Footer = () => (
             <a style={{ fontSize: "18px", color: "#1a202c" }}>
               Designed & Developed by <b>Hanife Erkalan</b>
             </a>
-          </Link>{" "}
+          </Link>
           &copy; {new Date().getFullYear()}{" "}
         </Text>
       </Flex>
@@ -118,18 +118,16 @@ const Home: NextPage = (props: any) => {
 
         <Box p={4}>
           <Box marginLeft={"80"}>
-            <Link href="/contact">
-              <>
-                {" "}
+            <Link href="/contactpage">
+              <a>
                 <TiChevronRight
                   className="contactpage"
                   style={{
                     color: "#d0d0d0",
-                    //   marginLeft: "1300px",
                     fontSize: "30px",
                   }}
                 />
-              </>
+              </a>
             </Link>
           </Box>
 
@@ -147,10 +145,8 @@ const Home: NextPage = (props: any) => {
           </Stack>
         </Box>
         <Box marginLeft={"0"} mb={4}>
-          {" "}
-          <Link href="/editProfile">
-            <>
-              {" "}
+          <Link href="/editprofile">
+            <a>
               <FiEdit
                 className="profileEdit"
                 color={"#aab0b9"}
@@ -159,9 +155,9 @@ const Home: NextPage = (props: any) => {
                   fontSize: "24px",
                   margin: "2px",
                 }}
-              />{" "}
-            </>
-          </Link>{" "}
+              />
+            </a>
+          </Link>
         </Box>
         <Stack>
           <Flex alignItems={"center"} justify={"center"}>

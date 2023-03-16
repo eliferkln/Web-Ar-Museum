@@ -154,7 +154,7 @@ function index() {
               }}
               onClick={send}
             >
-              <Link href="/editModel">
+              <Link href="/editmodel">
                 <a>Send</a>
               </Link>
             </button>
