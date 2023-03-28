@@ -117,7 +117,7 @@ const Home: NextPage = (props: any) => {
         </Flex>
 
         <Box p={4}>
-          <Box marginLeft={"80"}>
+          {/* <Box marginLeft={"80"}>
             <Link href="/contactpage">
               <a>
                 <TiChevronRight
@@ -129,7 +129,7 @@ const Home: NextPage = (props: any) => {
                 />
               </a>
             </Link>
-          </Box>
+          </Box> */}
 
           <Stack spacing={0} align={"center"}>
             <Heading
@@ -144,7 +144,7 @@ const Home: NextPage = (props: any) => {
             <Socials data={props.data} />
           </Stack>
         </Box>
-        <Box marginLeft={"0"} mb={4}>
+        {/* <Box marginLeft={"0"} mb={4}>
           <Link href="/editprofile">
             <a>
               <FiEdit
@@ -158,7 +158,7 @@ const Home: NextPage = (props: any) => {
               />
             </a>
           </Link>
-        </Box>
+        </Box> */}
         <Stack>
           <Flex alignItems={"center"} justify={"center"}>
             <Heading as="h5" textAlign={"center"} size="2xl" color={"#aab0b9"}>
